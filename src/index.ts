@@ -1,1 +1,3 @@
-export * from './button/button';
+export * from './Alert/Alert';
+export * from './Button/Button';
+export * from './Carousel/Carousel';
