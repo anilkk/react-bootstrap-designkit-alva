@@ -4,3 +4,4 @@ export * from './Carousel/Carousel';
 export * from './Dropdown/Dropdown';
 export * from './Glyphicon/Glyphicon';
 export * from './FormInput/FormInput';
+export * from './Image/Image';
