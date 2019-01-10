@@ -1,5 +1,5 @@
 import * as React from "react";
-import Loadcss from "../loadcss/loadcss";
+import CSSWrapper from "../loadcss/CSSWrapper";
 import ButtonStyle from "../Button/ButtonStyle";
 import ButtonSize from "../Button/ButtonSize";
 import {
@@ -26,13 +26,12 @@ export class Glyphicon extends React.Component<GlyphiconProps> {
     render() {
         const {text, icon, bsStyle, bsSize} = this.props;
         return (
-            <div>
-                <Loadcss/>
+            <CSSWrapper>
                 <Button bsSize={bsSize} bsStyle={bsStyle}>
                     <_Glyphicon glyph={icon}/>
                     {' '} {text}
                 </Button>
-            </div>
+            </CSSWrapper>
         );
     }
 }

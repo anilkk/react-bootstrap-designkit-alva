@@ -1,24 +1,24 @@
 import * as React from "react";
-import Loadcss from "../loadcss/loadcss";
-import { Button as _Button } from "react-bootstrap";
+import CSSWrapper from "../loadcss/CSSWrapper";
+import {Button as _Button} from "react-bootstrap";
 
 interface ButtonProps {
-  text?: string;
-  bsStyle?: string;
+    text?: string;
+    bsStyle?: string;
 }
 
 export class Button extends React.Component<ButtonProps> {
-  // Set default properties
-  static defaultProps = {
-    text: "Button",
-    bsStyle: "default"
-  };
+    // Set default properties
+    static defaultProps = {
+        text: "Button",
+        bsStyle: "default"
+    };
 
-  render() {
-    return (<div>
-      <Loadcss />
-      <_Button {...this.props}> { this.props.text } </_Button>
-    </div>);
-  }
+    render() {
+        return (<CSSWrapper>
+            <_Button {...this.props}> {this.props.text} </_Button>
+        </CSSWrapper>);
+    }
 }
+
 export default Button;

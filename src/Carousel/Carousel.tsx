@@ -1,5 +1,5 @@
 import * as React from "react";
-import Loadcss from "../loadcss/loadcss";
+import CSSWrapper from "../loadcss/CSSWrapper";
 import {Carousel as _Carousel, CarouselItem} from "react-bootstrap";
 
 interface CarouselProps {
@@ -22,8 +22,7 @@ export class Carousel extends React.Component<CarouselProps> {
     render() {
         const {imagesSrc, height, width} = this.props;
         return (
-            <div>
-                <Loadcss/>
+            <CSSWrapper>
                 <_Carousel
                     prevIcon={
                         <span className="carousel-control-prev">
@@ -42,7 +41,7 @@ export class Carousel extends React.Component<CarouselProps> {
                         </CarouselItem>
                     ))}
                 </_Carousel>
-            </div>
+            </CSSWrapper>
         );
     }
 }

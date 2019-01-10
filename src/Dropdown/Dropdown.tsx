@@ -1,5 +1,5 @@
 import * as React from "react";
-import Loadcss from "../loadcss/loadcss";
+import CSSWrapper from "../loadcss/CSSWrapper";
 import ButtonStyle from "../Button/ButtonStyle";
 import {
     DropdownButton,
@@ -23,12 +23,11 @@ export class Dropdown extends React.Component<DropdownProps> {
     render() {
         const {title, menuItems, bsStyle} = this.props;
         return (
-            <div>
-                <Loadcss/>
+            <CSSWrapper>
                 <DropdownButton bsStyle={bsStyle} title={title} id={'dropodwon-bootstrap-' + Date.now()}>
                     {menuItems.split(',').map((item, index) => (<MenuItem eventKey={index}>{item}</MenuItem>))}
                 </DropdownButton>
-            </div>
+            </CSSWrapper>
         );
     }
 }

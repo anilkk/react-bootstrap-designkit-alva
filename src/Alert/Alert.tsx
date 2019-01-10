@@ -1,6 +1,6 @@
 import * as React from "react";
-import Loadcss from "../loadcss/loadcss";
-import { Alert as _Alert } from "react-bootstrap";
+import CSSWrapper from "../loadcss/CSSWrapper";
+import {Alert as _Alert} from "react-bootstrap";
 
 interface AlertProps {
     text?: string;
@@ -22,10 +22,11 @@ export class Alert extends React.Component<AlertProps> {
     };
 
     render() {
-        return (<div>
-            <Loadcss />
-            <_Alert {...this.props}> { this.props.text } </_Alert>
-        </div>);
+        return (
+            <CSSWrapper>
+                <_Alert {...this.props}> {this.props.text} </_Alert>
+            </CSSWrapper>);
     }
 }
+
 export default Alert;
