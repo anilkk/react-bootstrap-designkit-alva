@@ -9,6 +9,7 @@ export * from './FormInput/FormInput';
 export * from './Image/Image';
 export * from './Jumbotron/Jumbotron';
 export * from './Modal/Modal';
+export * from './Navs/Navs';
 export * from './Overlay/Overlay';
 export * from './PageHeader/PageHeader';
 export * from './Pager/Pager';

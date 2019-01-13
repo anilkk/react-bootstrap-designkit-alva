@@ -26,6 +26,7 @@ export class Navs extends React.Component<NavsProps, NavsState> {
         this.handleSelect = this.handleSelect.bind(this);
     }
     handleSelect(selectedKey: ReactEventHandler) {
+        // @ts-ignore
         this.setState({ activeKey: selectedKey });
     }
 
@@ -44,6 +45,7 @@ export class Navs extends React.Component<NavsProps, NavsState> {
                 <Nav
                     bsStyle={bsStyle}
                     activeKey={this.state.activeKey}
+                    // @ts-ignore
                     onSelect={eventKey => {this.handleSelect(eventKey)}}
                 >
                     {items &&
