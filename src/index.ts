@@ -13,4 +13,5 @@ export * from './Pager/Pager';
 export * from './Pagination/Pagination';
 export * from './ProgressBar/ProgressBar';
 export * from './Table/Table';
-export * from './Tabs/Tabs';
+export * from './Tooltip/Tooltip';
+export * from './Well/Well';
