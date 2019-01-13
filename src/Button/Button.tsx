@@ -21,4 +21,7 @@ export class Button extends React.Component<ButtonProps> {
     }
 }
 
+/**
+ * @icon Image
+ */
 export default Button;
