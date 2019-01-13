@@ -11,6 +11,7 @@ export * from './Overlay/Overlay';
 export * from './PageHeader/PageHeader';
 export * from './Pager/Pager';
 export * from './Pagination/Pagination';
+export * from './Popover/Popover';
 export * from './ProgressBar/ProgressBar';
 export * from './Table/Table';
 export * from './Tooltip/Tooltip';
