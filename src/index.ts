@@ -12,3 +12,4 @@ export * from './PageHeader/PageHeader';
 export * from './Pager/Pager';
 export * from './Pagination/Pagination';
 export * from './ProgressBar/ProgressBar';
+export * from './Table/Table';
